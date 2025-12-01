@@ -21,9 +21,12 @@ Coloque as seguintes imagens nesta pasta:
 - **testimonial-juliana.jpg** - Foto da cliente Juliana Costa (usada em Testimonials.tsx)
 
 ### Galeria de Resultados (Obrigatórias)
-- **client-result-1.jpg** - Foto de resultado de cliente (marquinha no ombro/peito) - usada em Gallery.tsx
-- **client-result-2.jpg** - Foto de resultado de cliente (selfie no espelho) - usada em Gallery.tsx
-- **client-result-3.jpg** - Foto de resultado de cliente (vista de cima na cadeira de praia) - usada em Gallery.tsx
+- **client-result-1.jpg** - Foto de resultado de cliente - usada em Gallery.tsx
+- **client-result-2.jpg** - Foto de resultado de cliente - usada em Gallery.tsx
+- **client-result-3.jpg** - Foto de resultado de cliente - usada em Gallery.tsx
+- **client-result-4.jpg** - Foto de resultado de cliente - usada em Gallery.tsx
+- **client-result-5.jpg** - Foto de resultado de cliente - usada em Gallery.tsx
+- **client-result-6.jpg** - Foto de resultado de cliente - usada em Gallery.tsx
 
 ## Notas
 - Todas as imagens devem ter nomes exatos conforme listado acima
