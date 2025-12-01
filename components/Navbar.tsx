@@ -48,6 +48,7 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           <span onClick={() => scrollToSection('details')} className={linkClass}>Detalhes</span>
+          <span onClick={() => scrollToSection('gallery')} className={linkClass}>Galeria</span>
           <span onClick={() => scrollToSection('faq')} className={linkClass}>Dúvidas</span>
           <span onClick={() => scrollToSection('booking')} className={linkClass}>Agendar</span>
           <a 
@@ -73,6 +74,7 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl py-6 flex flex-col items-center space-y-6 animate-fade-in">
           <span onClick={() => scrollToSection('details')} className="text-lg text-gray-800 font-medium">Detalhes</span>
+          <span onClick={() => scrollToSection('gallery')} className="text-lg text-gray-800 font-medium">Galeria</span>
           <span onClick={() => scrollToSection('faq')} className="text-lg text-gray-800 font-medium">Dúvidas</span>
           <span onClick={() => scrollToSection('booking')} className="text-lg text-gray-800 font-medium text-amber-600">Agendar Agora</span>
         </div>

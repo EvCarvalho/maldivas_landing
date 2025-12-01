@@ -13,7 +13,7 @@ const Pricing: React.FC = () => {
           {/* Left Side: Image/Brand */}
           <div className="md:w-2/5 bg-gray-900 relative min-h-[300px] md:min-h-full">
             <img 
-              src="https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+              src="/images/pricing-background.jpg" 
               alt="Relaxing Spa" 
               className="absolute inset-0 w-full h-full object-cover opacity-60"
             />

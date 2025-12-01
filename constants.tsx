@@ -2,19 +2,20 @@ import { Sun, ShieldCheck, Clock, Heart, Star, Sparkles } from 'lucide-react';
 import { Benefit, FAQItem, Testimonial } from './types';
 import React from 'react';
 
-// Images
+// Images - Todas as imagens devem estar na pasta public/images/
 export const IMAGES = {
-  // Logo updated to user provided Imgur direct link
-  LOGO: "https://i.imgur.com/MHhfXgd.png",
-  
-  // User provided image for Giully hosted on Imgur
-  GIULLY: "https://i.imgur.com/hIqUSSO.jpeg",
-  
-  LOGO_PLACEHOLDER: "https://picsum.photos/id/64/200/200",
-  SALON_INTERIOR: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  PRODUCT_DETAIL: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-  TANNING_RESULT: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  LOGO: "/images/logo.png",
+  GIULLY: "/images/giully.png",
+  PRODUCT_DETAIL: "/images/product-detail.jpg",
+  TANNING_RESULT: "/images/tanning-result.jpg",
 };
+
+// Galeria de resultados de clientes
+export const CLIENT_GALLERY = [
+  "/images/client-result-1.jpg",
+  "/images/client-result-2.jpg",
+  "/images/client-result-3.jpg",
+];
 
 // Content
 export const COMPANY_INFO = {
@@ -83,21 +84,21 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Fernanda Oliveira",
     role: "Cliente fiel",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+    image: "/images/testimonial-fernanda.jpg",
     content: "Simplesmente apaixonada! O atendimento da Giully é impecável e a marquinha ficou perfeita na primeira sessão. O ambiente é super aconchegante.",
     rating: 5
   },
   {
     name: "Carla Mendes",
     role: "Modelo",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+    image: "/images/testimonial-carla.jpg",
     content: "Já fiz bronze em vários lugares, mas nenhum chega aos pés do Espaço Maldivas. Os produtos são de alta qualidade e minha pele não descascou. Recomendo demais!",
     rating: 5
   },
   {
     name: "Juliana Costa",
     role: "Advogada",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+    image: "/images/testimonial-juliana.jpg",
     content: "Amei a privacidade e o cuidado. Saí de lá me sentindo uma deusa! O biquíni de fita é feito com muito capricho, desenha super bem o corpo.",
     rating: 5
   }
