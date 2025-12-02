@@ -15,9 +15,6 @@ export const CLIENT_GALLERY = [
   "/images/client-result-1.jpg",
   "/images/client-result-2.jpg",
   "/images/client-result-3.jpg",
-  "/images/client-result-4.jpg",
-  "/images/client-result-5.jpg",
-  "/images/client-result-6.jpg",
 ];
 
 // Content
@@ -28,7 +25,7 @@ export const COMPANY_INFO = {
   address: "Rua André Massena 188, Arsenal São Gonçalo, Rio de Janeiro",
   // Direct search query map for better accuracy
   mapUrl: "https://maps.google.com/maps?q=Rua%20Andr%C3%A9%20Massena%20188%2C%20Arsenal%20S%C3%A3o%20Gon%C3%A7alo%2C%20Rio%20de%20Janeiro&t=&z=16&ie=UTF8&iwloc=&output=embed",
-  price: "R$ 99,00"
+  price: "R$ 49,99"
 };
 
 export const BENEFITS: Benefit[] = [

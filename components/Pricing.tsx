@@ -2,19 +2,21 @@ import React from 'react';
 import { Check, Calendar } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 
+import { motion } from 'framer-motion';
+
 const Pricing: React.FC = () => {
-  const whatsappLink = `https://wa.me/${COMPANY_INFO.whatsapp}?text=Olá! Quero agendar o pacote completo por R$ 99,00.`;
+  const whatsappLink = `https://wa.me/${COMPANY_INFO.whatsapp}?text=Olá! Quero agendar o pacote completo por R$ 49,99.`;
 
   return (
     <section id="booking" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100 flex flex-col md:flex-row">
-          
+
           {/* Left Side: Image/Brand */}
           <div className="md:w-2/5 bg-gray-900 relative min-h-[300px] md:min-h-full">
-            <img 
-              src="/images/pricing-background.jpg" 
-              alt="Relaxing Spa" 
+            <img
+              src="/images/pricing-background.jpg"
+              alt="Relaxing Spa"
               className="absolute inset-0 w-full h-full object-cover opacity-60"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
@@ -29,12 +31,18 @@ const Pricing: React.FC = () => {
             <div className="inline-block px-4 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full uppercase tracking-widest mb-6 w-max">
               Oferta Especial
             </div>
-            
+
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Pacote Bronze Completo</h2>
             <p className="text-gray-500 mb-8">Tudo incluso: montagem, produtos, exposição e banho de lua.</p>
 
             <div className="flex items-baseline mb-8">
-              <span className="text-5xl font-bold text-amber-600">{COMPANY_INFO.price}</span>
+              <motion.span
+                className="text-6xl font-extrabold text-amber-600 inline-block"
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                {COMPANY_INFO.price}
+              </motion.span>
               <span className="ml-2 text-gray-400 text-lg">/sessão</span>
             </div>
 
@@ -50,7 +58,7 @@ const Pricing: React.FC = () => {
             </ul>
 
             <div className="space-y-4">
-              <a 
+              <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
